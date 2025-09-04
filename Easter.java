@@ -3,34 +3,35 @@
 public class Easter{
     public static void main(String[] args) {
         //code goes here
-        int year;
+        int year = 2026;
         int a = year%19;
-        System.println("a = "+a);
+        System.out.println("a = "+a);
         int b = year/100;
-        System.println("b = "+b);
+        System.out.println("b = "+b);
         int c = year%100;
-        System.println("c = "+c);
+        System.out.println("c = "+c);
         int d = b/4;
-        System.println("d = "+d);
+        System.out.println("d = "+d);
         int e = b%4;
-        System.println("e = "+e);
+        System.out.println("e = "+e);
         int f = (b+8)/25;
-        System.println("f = "+f);
+        System.out.println("f = "+f);
         int g = (b-f+1)/3;
-        System.println("g = "+g);
-        int h = (19 * a + b – d – g + 15)%30;
-        System.println("h = "+h);
+        System.out.println("g = "+g);
+        int h = (19 * a + b - d - g + 15)%30;
+        System.out.println("h = "+h);
         int i = c/4;
-        System.println("i = "+i);
+        System.out.println("i = "+i);
         int k = c%4;
-        System.println("k = "+k);
+        System.out.println("k = "+k);
         int r = (32 + 2 * e + 2 * i - h - k)%7;
-        System.println("r = "+r);
+        System.out.println("r = "+r);
         int m = (a + 11 * h + 22 * r)/451;
-        System.println("m = "+m);
+        System.out.println("m = "+m);
         int n = (h + r - 7 * m + 114)/31;
-        System.println("n = "+n);
+        System.out.println("n = "+n);
         int p = (h + r - 7 * m + 114)%31;
-        System.println("p = "+p);
+        System.out.println("p = "+p);
+        System.out.println("Easter in "+year+" falls on "+n+"/"+(p+1));
     }
 }
