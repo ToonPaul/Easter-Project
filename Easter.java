@@ -1,9 +1,15 @@
 //Paul Hudalla
 //This program calulates the date of Easter given a year after 1583
+import java.util.Scanner;
+
 public class Easter{
     public static void main(String[] args) {
         //code goes here
+        System.out.println("Please enter a year after 1583 below:");
+        
         int year = 2026;
+        
+        
         int a = year%19;
         System.out.println("a = "+a);
         int b = year/100;
